@@ -24,7 +24,7 @@ end
 
 
 def end_game	
-  puts "Sorry, you hit #{total}. Thanks for playing!"
+  print "Sorry, you hit #{total}. Thanks for playing!"
 end
 
 
