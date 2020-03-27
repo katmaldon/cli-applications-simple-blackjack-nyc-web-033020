@@ -47,7 +47,7 @@ end
 
 
 def invalid_command
-  puts "Command not recognized. Enter: 'Hit' or 'Stay'"
+  puts "Please enter a valid command"
 end
 
 #####################################################
