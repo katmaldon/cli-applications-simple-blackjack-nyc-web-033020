@@ -42,7 +42,8 @@ def hit?(total)
     total
   elsif answer == "h"
     deal_card + total
-  end
+  else 
+    invalid_command
 end
 
 
