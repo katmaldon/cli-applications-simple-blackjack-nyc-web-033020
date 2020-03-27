@@ -23,8 +23,8 @@ def get_user_input
 end
 
 
-def end_game	
-  print "Sorry, you hit #{total}. Thanks for playing!"
+def end_game(total)	
+  puts "Sorry, you hit #{total}. Thanks for playing!"
 end
 
 
