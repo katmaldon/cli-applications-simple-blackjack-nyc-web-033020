@@ -22,7 +22,7 @@ end
 def get_user_input	def get_user_input
   # code #get_user_input here	  # code #get_user_input here
   gets.chomp
-end	end
+end
 
 
 def end_game(total)
