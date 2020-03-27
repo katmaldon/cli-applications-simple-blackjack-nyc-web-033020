@@ -62,9 +62,9 @@ end
 
 
 def invalid_command
-  # code invalid_command here	  puts "Sorry, you have chosen an invalid command, please try again."
+  puts "Please enter a valid command"
   get_user_input
-end	end
+end
 
 
 #####################################################	#####################################################
