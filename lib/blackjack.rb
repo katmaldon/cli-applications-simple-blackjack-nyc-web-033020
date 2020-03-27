@@ -64,7 +64,7 @@ end
 def invalid_command
   puts "Please enter a valid command"
   get_user_input
-end
+end	end
 
 
 #####################################################	#####################################################
@@ -72,16 +72,16 @@ end
 #####################################################	#####################################################
 
 
-def runner	def runner
-  # code runner here	  welcome
-end	  card_total = initial_round
+# def runner	def runner
+#   # code runner here	  welcome
+# end	  card_total = initial_round
 
-  until card_total >= 21
-    card_total = hit?(card_total)
-    display_card_total(card_total)
-    if $exit_signal == 1
-      break
-    end
-  end
-    end_game(card_total)
-end 
+#   until card_total >= 21
+#     card_total = hit?(card_total)
+#     display_card_total(card_total)
+#     if $exit_signal == 1
+#       break
+#     end
+#   end
+#     end_game(card_total)
+# end 
