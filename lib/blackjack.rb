@@ -19,8 +19,7 @@ def prompt_user
 end	
 
 
-def get_user_input	def get_user_input
-  # code #get_user_input here	  # code #get_user_input here
+def get_user_input
   gets.chomp
 end
 
