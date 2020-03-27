@@ -35,19 +35,19 @@ def initial_round
 end
 
 
-def hit?
+def hit?(total)
   answer = get_user_input
   if answer == "s"
     total
   elsif answer == "h"
     deal_card + total
   end
-end	end
+end
 
 
-def invalid_command	def invalid_command
-  # code invalid_command here	  puts "Command not recognized. Enter: 'Hit' or 'Stay'"
-end	end
+def invalid_command
+  puts "Command not recognized. Enter: 'Hit' or 'Stay'"
+end
 
 #####################################################
 # get every test to pass before coding runner below #
