@@ -33,17 +33,18 @@ end
 
 
 def get_user_input
-  # code #get_user_input here
   gets.strip.chomp
 end
 
 def hit? (card_total)
-  # code hit? here
   prompt_user
   if get_user_input == 'h'
     card_total += deal_card
-  end
+    elsif get_user_input == 's'
     card_total
+    else invalid_command
+  end
+  card_total
 end
 
 def invalid_command
