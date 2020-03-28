@@ -40,10 +40,10 @@ end
 def hit?
   prompt_user
   get_user_input
-  if input == "h"
+  if get_user_input == "h"
     new_card = deal_card
     total = total + new_card
-  elsif choice == "s"
+  elsif get_user_input == "s"
     total
   else
     invalid_command
