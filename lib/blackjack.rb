@@ -37,7 +37,7 @@ def initial_round
 end
 
 
-def hit?(total)
+def hit?
   prompt_user
   get_user_input
   if input == "h"
