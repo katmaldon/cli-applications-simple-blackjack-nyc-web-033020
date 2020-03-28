@@ -36,7 +36,7 @@ def get_user_input
   gets.strip.chomp
 end
 
-def hit? (card_total)
+def hit?(card_total)
   prompt_user
   if get_user_input == 'h'
     card_total += deal_card
@@ -48,16 +48,12 @@ def hit? (card_total)
 end
 
 def invalid_command
-  # code invalid_command here
   puts "Please enter a valid command"
 end
-
-#####################################################	#####################################################
 
 
 
 def runner	
-  
   welcome
   card_total = initial_round
   until card_total > 21
