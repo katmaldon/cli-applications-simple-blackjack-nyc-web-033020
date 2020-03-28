@@ -1,60 +1,52 @@
+def deal_card
+  # code #deal_card here
+    rand(1..11)
+end
+
+def display_card_total(card_total)
+  # code #display_card_total here
+  puts "Your cards add up to #{card_total}"
+  card_total
+end
+
 def welcome
+  # code #welcome here
   puts "Welcome to the Blackjack Table"
 end
 
-
-def deal_card
-  card = rand(1..11)
-  return card
-end
-
-
-def display_card_total(total)
-  puts "Your cards add up to #{total}"
-end
-
-
 def prompt_user
+  # code #prompt_user here
   puts "Type 'h' to hit or 's' to stay"
-end	
-
-
-def get_user_input
-  gets.chomp
 end
-
-
-def end_game(total)
-  puts "Sorry, you hit #{total}. Thanks for playing!"
-end
-
 
 def initial_round
-  card1 = deal_card
-  card2 = deal_card
-  total = card1 + card2
-  display_card_total(total)
+  # code #initial_round here
+  sum = rand(1..11) + rand(1..11)
+  display_card_total(sum)
 end
 
+def end_game(card_total)
+    puts "Sorry, you hit #{card_total}. Thanks for playing!"
+end
 
-def hit?(total)
+def get_user_input
+  # code #get_user_input here
+  gets.strip.chomp
+end
+
+def hit? (card_total)
+  # code hit? here
   prompt_user
-  get_user_input
-  if get_user_input == "h"
-    new_card = deal_card
-    total = total + new_card
-  elsif get_user_input == "s"
-    total
-  else
-    invalid_command
+  if get_user_input == 'h'
+    card_total += deal_card
   end
+    card_total
 end
-
 
 def invalid_command
-  puts "Please enter a valid command"
+  # code invalid_command here
+  puts "invalid"
 end
-
 
 #####################################################	#####################################################
 
